@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="userForm" (ngSubmit)="login()">
+    <ion-text color="primary" class="ion-text-center ion-text-uppercase">
+      <h2>Tài khoản</h2>
+    </ion-text>
+
+    <ion-list class="ion-padding form-login ion-margin-top">
+      <ion-item class="" lines="none">
+        <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+        <ion-label position="stacked">E-mail (*)</ion-label>
+        <ion-input clearInput placeholder="E-mail" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" formControlName="email" color="primary" type="email" autofocus="true">
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="" lines="none">
+        <ion-icon slot="start" name="key"></ion-icon>
+        <ion-label position="stacked">Mật khẩu (*)</ion-label>
+        <ion-input clearInput placeholder="Mật khẩu" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" formControlName="password" color="primary" type="password"></ion-input>
+      </ion-item>
+
+      <div class="clear-oneline ion-margin-top ion-margin-bottom"></div>
+
+      <ion-item class="">
+        <ion-text slot="end" color="medium">
+          Lưu mật khẩu
+        </ion-text>
+        <ion-toggle slot="end" formControlName="save"></ion-toggle>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-buttons slot="end" class="ion-no-margin">
+          <ion-button (click)="reset()" color="medium" fill="clear" class="ion-no-margin no-ripple">
+            Nhập lại
+          </ion-button>
+
+          <ion-button type="submit" color="primary" fill="solid" [disabled]="!userForm.valid">
+            Đăng nhập <ion-icon name="enter-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center">
+    <ion-text color="medium">
+      copyright © 2020 type.vn
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>

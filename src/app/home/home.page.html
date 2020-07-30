@@ -1,0 +1,104 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-img class="logo" [src]="'./assets/icon/logo.svg'"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar color="warning">
+    <ion-text color="light" class="ion-padding ion-text-uppercase">
+      <b>Bài học (3)</b>
+    </ion-text>
+  </ion-toolbar>
+
+  <ion-list>
+    <!-- Sliding item with text options on both sides -->
+    <ion-item-sliding>
+      <ion-item-options side="start">
+        <ion-item-option color="primary" (click)="share()">
+          <ion-button expand="block" fill="clear" shape="round" color="light">
+            <ion-icon slot="start" name="share-social-outline"></ion-icon> Chia sẻ
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options>
+
+      <ion-item lines="inset" detail="false">
+        <ion-icon slot="start" name="heart-outline" class="ion-no-margin ion-margin-end" color="warning"></ion-icon>
+        <ion-label color="medium">
+          <b>Giới thiệu Ionic Framework – cài đặt và tạo ứng dụng</b>
+        </ion-label>
+      </ion-item>
+
+      <!-- <ion-item-options side="end">
+        <ion-item-option color="tertiary" [routerLink]="['/login']" routerDirection="forward">
+          <ion-button expand="block" fill="clear" shape="round" color="light">
+            <ion-icon slot="start" name="scan-outline"></ion-icon>
+            Demo
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options> -->
+    </ion-item-sliding>
+
+    <!-- Sliding item with text options on both sides -->
+    <ion-item-sliding>
+      <ion-item-options side="start">
+        <ion-item-option color="primary" (click)="share()">
+          <ion-button expand="block" fill="clear" shape="round" color="light">
+            <ion-icon slot="start" name="share-social-outline"></ion-icon> Chia sẻ
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options>
+
+      <ion-item lines="inset" detail="false">
+        <ion-icon slot="start" name="heart-outline" class="ion-no-margin ion-margin-end" color="warning"></ion-icon>
+        <ion-label color="medium">
+          <b>Bài 1: Ionic – Tạo ứng dụng mobile đầu tiên</b>
+        </ion-label>
+      </ion-item>
+
+      <!-- <ion-item-options side="end">
+        <ion-item-option color="tertiary" [routerLink]="['/login']" routerDirection="forward">
+          <ion-button expand="block" fill="clear" shape="round" color="light">
+            <ion-icon slot="start" name="scan-outline"></ion-icon>
+            Demo
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options> -->
+    </ion-item-sliding>
+
+    <!-- Sliding item with text options on both sides -->
+    <ion-item-sliding>
+      <ion-item-options side="start">
+        <ion-item-option color="primary" (click)="share()">
+          <ion-button expand="block" fill="clear" shape="round" color="light">
+            <ion-icon slot="start" name="share-social-outline"></ion-icon> Chia sẻ
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options>
+
+      <ion-item lines="inset" detail="false">
+        <ion-icon slot="start" name="heart-outline" class="ion-no-margin ion-margin-end" color="warning"></ion-icon>
+        <ion-label color="medium">
+          <b>Bài 2: Ionic – Xây dựng màn hình Đăng nhập (Login page)</b>
+        </ion-label>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="tertiary" [routerLink]="['/login']" routerDirection="forward">
+          <ion-button expand="block" fill="clear" shape="round" color="light">
+            <ion-icon slot="start" name="scan-outline"></ion-icon>
+            Demo
+          </ion-button>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center">
+    <ion-text color="medium">
+      copyright © 2020 type.vn
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>
